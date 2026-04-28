@@ -111,7 +111,7 @@ The primary dashboard is generated via ExtentReports 5.1.2. This reporter provid
 * **Automatic Screenshot Capture:** The framework is configured with an @After hook that detects a failed scenario, takes a screenshot, and embeds it directly into the report at the point of failure. This is invaluable for debugging flaky tests or environmental issues.9  
 * **System Metadata:** The report automatically includes details about the environment, such as the Java version, OS, and browser configurations.27
 
-![Extent Reports](screeshots/extentReport.PNG)
+![Extent Reports](screenshots/extentReport.PNG)
 
 ### **Cucumber-Reporting (Masterthought)**
 
