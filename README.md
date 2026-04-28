@@ -111,13 +111,13 @@ The primary dashboard is generated via ExtentReports 5.1.2. This reporter provid
 * **Automatic Screenshot Capture:** The framework is configured with an @After hook that detects a failed scenario, takes a screenshot, and embeds it directly into the report at the point of failure. This is invaluable for debugging flaky tests or environmental issues.9  
 * **System Metadata:** The report automatically includes details about the environment, such as the Java version, OS, and browser configurations.27
 
-![Extent Reports](extentReport.PNG)
+![Extent Reports](screeshots/extentReport.PNG)
 
 ### **Cucumber-Reporting (Masterthought)**
 
 For technical deep-dives, the cucumber-reporting (Masterthought) plugin is utilized. This tool generates statistics on the execution time of every feature, scenario, and step. It helps identify performance bottlenecks within the automation code and provides a clear audit trail for compliance and quality assurance reviews.29
 
-![Cucumber Report](cucumberReport.PNG)
+![Cucumber Report](screenshots/cucumberReport.PNG)
 
 ## **Continuous Integration and the Jenkins Pipeline**
 
