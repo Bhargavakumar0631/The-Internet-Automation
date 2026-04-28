@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Hybrid Automation Suite">
+
+    <!-- Runs your pure TestNG scripts
+    <test name="Pure TestNG Tests">
+        <classes>
+            <class name="base.TestNGBaseTest"/>
+            - Add other pure TestNG classes here
+        </classes>
+    </test>
+    -->
+
+    <!-- Runs your entire Cucumber suite via the Runner -->
+    <test name="Hybrid Cucumber-testNG for TheInternet">
+        <classes>
+            <class name="runners.CucumberRunner"/>
+        </classes>
+    </test>
+
+</suite>

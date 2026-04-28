@@ -1,0 +1,22 @@
+# Build artifacts
+target/
+bin/
+*.log
+
+# Drivers & OS files
+*.exe
+*.dll
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Test Reports (ExtentReports/Surefire)
+test-output/
+test-reports/
