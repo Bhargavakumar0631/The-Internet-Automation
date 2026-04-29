@@ -156,21 +156,21 @@ Since you installed Java and Maven earlier, ensure Jenkins can see them:
 3.	Check the box and click Install without restart.
 
 **Set Up Your GitHub Credentials**
-1. Go to Manage Jenkins > Credentials.
-2. Click (global) under the Domains, then Add Credentials.
+1.  Go to Manage Jenkins > Credentials.
+2.  Click (global) under the Domains, then Add Credentials.
 3.	Kind: Select Username with password.
 4.	Username: Your GitHub username.
 5.	Password: Do not use your GitHub login password. Use a **Personal Access Token (PAT)**. Definitely note this down.
-   (To get a PAT: Go to your GitHub Settings > Developer Settings > Personal Access Tokens (Tokens classic) > Generate new token. Give it repo permissions.)
+    (To get a PAT: Go to your GitHub Settings > Developer Settings > Personal Access Tokens (Tokens classic) > Generate new token. Give it repo permissions.)
 6.	ID: Give it a simple name like github-token and click Create.
-7. Create and Configure Your Job
+7.  Create and Configure Your Job
 8.	On the Jenkins Dashboard, click New Item.
 9.	Enter a name (e.g., MyAutomationProject), select Freestyle project, and click OK.
     
 **Source Code Management:**
-11.	Select Git.
-12.	Repository URL: Paste your GitHub project URL (e.g., https://github.com/youruser/your-repo.git).
-13.	Credentials: Select the github-token you just created.
+11.	 Select Git.
+12.	 Repository URL: Paste your GitHub project URL (e.g., https://github.com/youruser/your-repo.git).
+13.	 Credentials: Select the github-token you just created.
 
 
 ### **5\. Add Windows Batch Commands**
