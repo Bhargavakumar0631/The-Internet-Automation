@@ -130,10 +130,14 @@ Running Jenkins via a .war file is a great way to keep things lightweight on Win
 3. **Run:** Open Command Prompt in that folder and run:  
 4. java \-jar jenkins.war  
 5. **Unlock:** Look for the **initial admin password** printed in the console. Copy it.
+   **Another Method**
+1. Download Jenkins Installer for your desired OS(In my case it is windows)
+2. Install it giving necessary info and desired port ans start the server
+   
 
 ### **2\. Browser Configuration**
 
-1. **Open Port:** Go to http://localhost:8080 in your browser.  
+1. **Open Port:** Go to http://localhost:8080 (include your desired port) in your browser.  
 2. **Setup:** Paste the admin password, select **"Install suggested plugins,"** and create your admin user.
 
 ### **3\. Configure Windows Tools**
@@ -146,9 +150,28 @@ Since you installed Java and Maven earlier, ensure Jenkins can see them:
 
 ### **4\. Create Your Project**
 
-1. On the Dashboard, click **New Item**.  
-2. Enter a name (e.g., "MyAutomationProject") and select **Freestyle project**. Click **OK**.  
-3. **Source Code Management:** If your code is on GitHub, select **Git** and paste your Repository URL.
+1. Install the GitHub Plugin
+1.	Go to Manage Jenkins > Plugins > Available plugins.
+2.	Search for GitHub Integration.
+3.	Check the box and click Install without restart.
+
+**Set Up Your GitHub Credentials**
+1. Go to Manage Jenkins > Credentials.
+2. Click (global) under the Domains, then Add Credentials.
+3.	Kind: Select Username with password.
+4.	Username: Your GitHub username.
+5.	Password: Do not use your GitHub login password. Use a **Personal Access Token (PAT)**. Definitely note this down.
+   (To get a PAT: Go to your GitHub Settings > Developer Settings > Personal Access Tokens (Tokens classic) > Generate new token. Give it repo permissions.)
+6.	ID: Give it a simple name like github-token and click Create.
+7. Create and Configure Your Job
+8.	On the Jenkins Dashboard, click New Item.
+9.	Enter a name (e.g., MyAutomationProject), select Freestyle project, and click OK.
+    
+**Source Code Management:**
+11.	Select Git.
+12.	Repository URL: Paste your GitHub project URL (e.g., https://github.com/youruser/your-repo.git).
+13.	Credentials: Select the github-token you just created.
+
 
 ### **5\. Add Windows Batch Commands**
 
